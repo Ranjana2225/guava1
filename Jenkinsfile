@@ -14,7 +14,7 @@ pipeline{
         sh 'mvn clean install'
       }
     }
-    stage('adding text to source"){
+    stage('adding text to source'){
           steps{
             sh 'echo "this is copied text from source" >source.txt'
           }
